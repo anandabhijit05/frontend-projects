@@ -91,3 +91,14 @@ footer #location {
         font-size: 22px;
     }
 }
+/* nav .container #navbar-collapse ul li.nav-link */
+ .navbar-inverse .container .navbar-nav > .active{
+    color: #fff;
+   background: #001f3f;
+ }
+ .navbar-inverse .container .navbar-nav > .active > a, 
+ .navbar-inverse .container .navbar-nav > .active > a:hover, 
+ .navbar-inverse .container .navbar-nav > .active > a:focus {
+      color: #fff;
+      background: #001f3f;
+ }
