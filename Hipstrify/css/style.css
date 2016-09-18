@@ -1,6 +1,9 @@
 html, body, .cover {
     height: 100%;
 }
+body {
+    position: relative;
+}
 .cover {
     background: url('../img/couchfriends.jpg') top left no-repeat;
     background-size: cover;
