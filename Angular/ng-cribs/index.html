@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>ng-Cribs</title>
+        <link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap.min.css">
+
+        <!--[if lt IE 9]>
+            <script src="//cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script>
+            <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js">
+            </script>
+        <![endif]-->
+    </head>
+    <body ng-app="ngCribs" ng-controller="cribsController">
+        <div class="well" ng-repeat="crib in cribs">
+            <h3>{{ crib.address }}</h3>
+            <p><strong>Type: </strong>{{ crib.type }}</p>
+            <p><strong>Description: </strong>{{ crib.description }}</p>
+            <p><strong>Price: </strong>{{ crib.price | currency }}</p>
+        </div>
+    </body>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.1.3/ui-bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.1.3/ui-bootstrap-tpls.min.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+        <script type="text/javascript" src="cribsController.js"></script>
+</html>
